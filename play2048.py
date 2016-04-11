@@ -13,12 +13,11 @@ def play2048( times ):
     browser.get('https://gabrielecirulli.github.io/2048/')
 
     htmlElem = browser.find_element_by_tag_name('html')
-
+    scoreElem = browser.find_element_by_class_name('score-container')
     for i in range(times):
         htmlElem.send.keys(Keys.UP)
         htmlElem.send.keys(Keys.RIGHT)
         htmlElem.send.keys(Keys.DOWN)
         htmlElem.send.keys(Keys.LEFT)
 
-    finalScore = browser.find_element_by_class_name('score-container').text
-    print('Alpha2048 scored ' + finalScore.split('\n')[0] + '.')
+        print('Alpha2048 scored ' + finalScore.split('\n')[0] + '.')
