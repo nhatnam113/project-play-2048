@@ -16,7 +16,7 @@ def play2048( times ):
     scoreElem = browser.find_element_by_class_name('score-container')
 
     move = 0
-    for i in range(times):
+    while moves < times:
         htmlElem.send.keys(Keys.UP)
         htmlElem.send.keys(Keys.RIGHT)
         htmlElem.send.keys(Keys.DOWN)
