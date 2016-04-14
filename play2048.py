@@ -14,10 +14,13 @@ def play2048( times ):
 
     htmlElem = browser.find_element_by_tag_name('html')
     scoreElem = browser.find_element_by_class_name('score-container')
+
+    move = 0
     for i in range(times):
         htmlElem.send.keys(Keys.UP)
         htmlElem.send.keys(Keys.RIGHT)
         htmlElem.send.keys(Keys.DOWN)
         htmlElem.send.keys(Keys.LEFT)
+        move +=1
 
-        print('Alpha2048 scored ' + finalScore.split('\n')[0] + '.')
+        print('Beautiful work. Your final score is: ' + scoreElem.text)
