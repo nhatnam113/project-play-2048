@@ -17,10 +17,10 @@ def play2048( times ):
 
     moves = 0
     while moves < times:
-        htmlElem.send.keys(Keys.UP)
-        htmlElem.send.keys(Keys.RIGHT)
-        htmlElem.send.keys(Keys.DOWN)
-        htmlElem.send.keys(Keys.LEFT)
+        htmlElem.send_keys(Keys.UP)
+        htmlElem.send_keys(Keys.RIGHT)
+        htmlElem.send_keys(Keys.DOWN)
+        htmlElem.send_keys(Keys.LEFT)
         moves +=1
 
-        print('Beautiful work. Your final score is: ' + scoreElem.text)
+        print('Good work. Your final score is: ' + scoreElem.text)
